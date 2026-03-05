@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste formulario</title>
+  </head>
+  <body style="font-family: sans-serif">
+    <main>
+      <form action="/register" method="post">
+        <fieldset>
+          <legend><strong>Crie sua conta</strong></legend>
+
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required /> <br /><br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+          <br />
+          <br />
+
+          <label for="gender"><strong>Gênero:</strong></label
+          ><br />
+          <input type="radio" id="male" name="genderSel" value="male" checked required/>
+          <label for="male">Masculino</label><br />
+          <input type="radio" id="female" name="genderSel" value="female" required/>
+          <label for="male">Feminino</label><br>
+          <input type="radio" id="other" name="genderSel" value="other" required/>
+          <label for="male">Outro</label>
+
+          <br />
+          <br />
+          <label for="biography">Biografia:</label>
+          <br />
+
+          <textarea
+            name="biography"
+            id="biography"
+            placeholder="Eu nasci em...."
+            rows="6"
+            cols="50"
+            required
+          ></textarea>
+
+          <br />
+          <br />
+
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms">Eu li e aceito os <a href="">termos de uso</a>.</label>
+          <br />
+          <br />
+
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

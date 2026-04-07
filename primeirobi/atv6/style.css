@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 10px;
+}
+
+#todolist li {
+    cursor: pointer;
+}
+#todolist li:hover {
+    color: red;
+}
+#todolist {
+    width: 300px;
+    padding-left: 20px;
+}
